@@ -1,0 +1,6 @@
+#deploying k3s on all vms.
+-
+  name: download k3s
+  hosts: vms
+  tasks:
+    - command: sudo curl -sfL https://get.k3s.io | sh -
